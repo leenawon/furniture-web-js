@@ -196,3 +196,68 @@
 .total-cart .total-cart-price {
   margin-left: 0.5rem;
 }
+
+/* Banner */
+.banner {
+  flex: 1;
+  padding-top: 6.25rem;
+  text-align: center;
+}
+
+.banner > div {
+  margin: 2rem 0;
+}
+
+/* Banner Text */
+.banner-text p {
+  font-size: 1.1rem;
+  margin: 1.2rem 0;
+  line-height: 1.7;
+  opacity: 0.7;
+}
+
+/* Banner Buttons */
+.banner-text .banner-buttons {
+  margin: 1.5rem 0;
+}
+
+.banner-buttons button {
+  display: block;
+  width: 150px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  margin: 0.8rem auto;
+  border-radius: 1.5rem;
+  border: 2px solid var(--brown-color);
+  color: var(--white-color);
+  background-color: var(--brown-color);
+  transition: var(--transition);
+}
+
+.banner-buttons button:first-child:hover {
+  color: var(--brown-color);
+  background-color: transparent;
+}
+
+.banner-buttons button:last-child {
+  color: var(--brown-color);
+  background-color: transparent;
+}
+
+.banner-buttons button:last-child:hover {
+  color: var(--white-color);
+  background-color: var(--brown-color);
+}
+
+/* Banner Image */
+.banner .banner-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-image img {
+  width: 85%;
+}
