@@ -1,0 +1,127 @@
+/* Product Section */
+.product-section {
+  padding: 4rem 0 5rem;
+}
+
+/* Product Container */
+.product-container h2 {
+  color: var(--brown-color);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.product-container h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  margin: 1.5rem auto 1rem;
+  border-bottom: 5px solid var(--gray-color);
+}
+
+/* Product Item */
+.product-list .product-item {
+  margin: 1rem 0;
+}
+
+/* Product Image */
+.product-item .product-image {
+  height: 350px;
+  padding: 3rem 0;
+  background-color: var(--white-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  margin: 0 auto;
+  transition: var(--transition);
+}
+
+.product-image:hover img {
+  opacity: 0.8;
+}
+
+/* Add Product Button */
+.product-image .add-product-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  background-color: var(--light-brown-color);
+  color: var(--white-color);
+  border-radius: 0.8rem;
+  transform: translate(-50%, -50%);
+  transition: var(--transition);
+  opacity: 0;
+}
+
+.add-product-button span {
+  margin-left: 0.5rem;
+}
+
+.add-product-button:hover {
+  background-color: var(--brown-color);
+}
+
+.product-item:hover .add-product-button {
+  opacity: 1;
+}
+
+/* Product Description */
+.product-description {
+  padding: 1.6rem 0;
+  text-align: center;
+}
+
+/* Product Category */
+.product-description .product-category {
+  display: inline-block;
+  margin: 0.8rem 0;
+  padding: 0.05rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--light-brown-color);
+  color: var(--white-color);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+/* Product Price */
+.product-description .product-price {
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+/* Media Query */
+@media screen and (min-width: 680px) {
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .product-section {
+    padding: 3rem 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .product-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
