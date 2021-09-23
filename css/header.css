@@ -261,3 +261,86 @@
 .banner-image img {
   width: 85%;
 }
+
+/* Media Query */
+@media screen and (min-width: 1024px) {
+  .header .navbar {
+    padding: 2rem 12rem;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .banner {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-content: center;
+    padding: 0 3rem;
+  }
+
+  .banner-text {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 967px) {
+  .banner-image img {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header .navbar {
+    padding: 2rem 5rem;
+  }
+
+  .cart-wrapper {
+    width: 450px;
+    left: auto;
+    right: 3rem;
+  }
+}
+
+@media screen and (max-width: 536px) {
+  .navbar .navbar-title,
+  .cart-container {
+    justify-self: center;
+  }
+
+  .cart-item .cart-item-delete-button {
+    width: 25px;
+    height: 25px;
+  }
+
+  .banner-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner-text p {
+    font-size: 1rem;
+  }
+
+  .banner-buttons button {
+    font-size: 0.8rem;
+    padding: 0.8rem 0;
+  }
+
+  .banner-image img {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .banner-buttons button {
+    display: inline-block;
+  }
+
+  .banner-buttons button:first-child {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 346px) {
+  .banner-image img {
+    display: none;
+  }
+}
