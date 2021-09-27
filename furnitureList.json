@@ -1,0 +1,122 @@
+[
+  {
+    "name" : "우드 침대",
+    "category" : "bed",
+    "price" : "₩1200000",
+    "image" : "images/bed_1.png"
+  },
+  {
+    "name" : "화이트 의자",
+    "category" : "chair",
+    "price" : "₩100000",
+    "image" : "images/armchair.png"
+  },
+  {
+    "name" : "화이트 침대",
+    "category" : "bed",
+    "price" : "₩1000000",
+    "image" : "images/bed_2.png"
+  },
+  {
+    "name" : "빈티지 카펫",
+    "category" : "carpet",
+    "price" : "₩30000",
+    "image" : "images/carpet.png"
+  },
+  {
+    "name" : "우드 의자",
+    "category" : "chair",
+    "price" : "₩40000",
+    "image" : "images/chair.png"
+  },
+  {
+    "name" : "화이트 서랍",
+    "category" : "drawer",
+    "price" : "₩200000",
+    "image" : "images/drawer.png"
+  },
+  {
+    "name" : "우드 옷장",
+    "category" : "closet",
+    "price" : "₩800000",
+    "image" : "images/closet.png"
+  },
+  {
+    "name" : "화이트 베개",
+    "category" : "pillow",
+    "price" : "₩20000",
+    "image" : "images/pillow.png"
+  },
+  {
+    "name" : "그레이 침대",
+    "category" : "bed",
+    "price" : "₩1500000",
+    "image" : "images/bed_3.png"
+  },
+  {
+    "name" : "브라운 흔들의자",
+    "category" : "chair",
+    "price" : "₩150000",
+    "image" : "images/rocking_chair_1.png"
+  },
+  {
+    "name" : "그레이 2인 소파",
+    "category" : "sofa",
+    "price" : "₩250000",
+    "image" : "images/sofa_2.png"
+  },
+  {
+    "name" : "우드 미니 테이블",
+    "category" : "table",
+    "price" : "₩50000",
+    "image" : "images/table_1.png"
+  },
+  {
+    "name" : "화이트 흔들의자",
+    "category" : "chair",
+    "price" : "₩100000",
+    "image" : "images/rocking_chair_2.png"
+  },
+  {
+    "name" : "브라운 4인 소파",
+    "category" : "sofa",
+    "price" : "₩700000",
+    "image" : "images/sofa_1.png"
+  },
+  {
+    "name" : "실버 미니 테이블",
+    "category" : "table",
+    "price" : "₩30000",
+    "image" : "images/table_2.png"
+  },
+  {
+    "name" : "럭셔리 화이트 소파",
+    "category" : "sofa",
+    "price" : "₩120000",
+    "image" : "images/sofa_3.png"
+  },
+  {
+    "name" : "우드 스퀘어 테이블",
+    "category" : "table",
+    "price" : "₩80000",
+    "image" : "images/table_3.png"
+  },
+  {
+    "name" : "사다리꼴 서랍",
+    "category" : "drawer",
+    "price" : "₩60000",
+    "image" : "images/drawer_3.png"
+  },
+  {
+    "name" : "심플 화이트 옷장",
+    "category" : "closet",
+    "price" : "₩400000",
+    "image" : "images/closet_2.png"
+  },
+  {
+    "name" : "우드 3단 서랍",
+    "category" : "drawer",
+    "price" : "₩120000",
+    "image" : "images/drawer_2.png"
+  }
+]
