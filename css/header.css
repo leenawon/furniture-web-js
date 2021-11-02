@@ -138,10 +138,14 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: 0.8rem;
   align-items: center;
-  padding: 1.2rem 0.6rem;
+  padding: 1rem 0.8rem 1rem 1.8rem;
   height: 140px;
   border-bottom: 1px solid var(--black-rgba);
   position: relative;
+}
+
+.cart-item:first-child {
+  padding-top: 0.4rem;
 }
 
 .cart-item:last-child {
@@ -149,7 +153,7 @@
 }
 
 .cart-item img {
-  width: 100px;
+  width: 80px;
 }
 
 /* Cart Item Description */
@@ -169,10 +173,10 @@
 /* Cart Item Delete Button */
 .cart-item .cart-item-delete-button {
   position: absolute;
-  top: 30px;
-  right: 15px;
-  width: 28px;
-  height: 28px;
+  top: 20px;
+  right: 13px;
+  width: 25px;
+  height: 25px;
   padding: 0.5rem;
   display: flex;
   justify-content: center;
