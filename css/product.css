@@ -62,8 +62,8 @@
   opacity: 0;
 }
 
-.add-product-button span {
-  margin-left: 0.5rem;
+.add-product-button i {
+  margin-right: 0.5rem;
 }
 
 .add-product-button:hover {
