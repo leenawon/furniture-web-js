@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./css/footer.css">
   <!-- JAVASCRIPT -->
   <script src="./javascript/script.js" defer></script>
+  <script src="./javascript/cart.js" defer></script>
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -46,34 +47,18 @@
           <button type="button" class="cart-button">
             <i class="fas fa-shopping-cart"></i>
             <!-- Count Cart -->
-            <span class="count-cart">0</span>
+            <span class="count-cart"></span>
           </button>
           <!-- Cart Container -->
           <div class="cart-wrapper">
             <!-- Cart List -->
-            <ul>
+            <ul class="cart-list">
               <!-- Cart Item -->
-              <div class="cart-item">
-                <img src="./images/bed_1.png" alt="우드 침대">
-                <!-- Cart Item Description -->
-                <div class="cart-item-description">
-                  <!-- Cart Item Title -->
-                  <h3 class="cart-item-title">우드 침대</h3>
-                  <span class="cart-item-category">침대</span>
-                  <span class="cart-item-price">120만원</span>
-                </div>
-                <!-- Cart Item Delete Button -->
-                <button type="button" class="cart-item-delete-button">
-                  <i class="fas fa-times"></i>
-                </button>
-              </div>
             </ul>
             <!-- Total Cart -->
             <div class="total-cart">
               <h4>총 금액 :</h4>
-              <span class="total-cart-price">
-                100만원
-              </span>
+              <span class="total-cart-price"></span>
             </div>
           </div>
         </div>
