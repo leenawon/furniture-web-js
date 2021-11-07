@@ -4,6 +4,28 @@ const totalCartPrice = document.querySelector('.total-cart-price');
 
 let CART_ITEM_ID = 1;
 
+// Add Product To Cart
+function addProductToCart(productInfo) {
+  const cartItem = document.createElement('div');
+  cartItem.classList.add('cart-item');
+  cartItem.setAttribute('id', `${productInfo.id}`);
+  cartItem.innerHTML = `
+    <img src="${productInfo.image}" alt="${productInfo.name}"/>
+    <!-- Cart Item Description -->
+    <div class="cart-item-description">
+      <!-- Cart Item Title -->
+      <h3 class="cart-item-title">${productInfo.name}</h3>
+      <span class="cart-item-category">${productInfo.category}</span>
+      <span class="cart-item-price">${productInfo.price}</span>
+    </div>
+    <!-- Cart Item Delete Button -->
+    <button type="button" class="cart-item-delete-button">
+      <i class="fas fa-times"></i>
+    </button>
+  `;
+  cartList.appendChild(cartItem);
+}
+
 // Get Product Information 
 function getProductInfo(productItem) {
   let productInfo = {
@@ -14,6 +36,7 @@ function getProductInfo(productItem) {
     price: productItem.querySelector('.product-price').textContent
   }
   CART_ITEM_ID++;
+  addProductToCart(productInfo);
 }
 
 // Buying Product (add Product Button)
