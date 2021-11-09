@@ -4,6 +4,18 @@ const totalCartPrice = document.querySelector('.total-cart-price');
 
 let CART_ITEM_ID = 1;
 
+// Get Product Item (local Storage)
+function getProductItem() {
+  return localStorage.getItem('productItem') ? JSON.parse(localStorage.getItem('productItem')) : [];
+}
+
+// Save Product Item (local Storage)
+function saveProductItem(item) {
+  let productItem = getProductItem();
+  productItem.push(item);
+  localStorage.setItem('productItem', JSON.stringify(productItem));
+}
+
 // Add Product To Cart
 function addProductToCart(productInfo) {
   const cartItem = document.createElement('div');
@@ -37,6 +49,7 @@ function getProductInfo(productItem) {
   }
   CART_ITEM_ID++;
   addProductToCart(productInfo);
+  saveProductItem(productInfo);
 }
 
 // Buying Product (add Product Button)
