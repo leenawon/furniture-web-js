@@ -9,6 +9,18 @@ function getProductItem() {
   return localStorage.getItem('productItem') ? JSON.parse(localStorage.getItem('productItem')) : [];
 }
 
+// Load Product Item
+function loadProductItem() {
+  let productItem = getProductItem();
+  if(productItem.length < 1) {
+    CART_ITEM_ID = 1;
+  } else {
+    CART_ITEM_ID = productItem[productItem.length -1].id;
+    CART_ITEM_ID++;
+  }
+  productItem.forEach((product) => addProductToCart(product));
+}
+
 // Save Product Item (local Storage)
 function saveProductItem(item) {
   let productItem = getProductItem();
@@ -64,6 +76,8 @@ function buyingProduct(e) {
 function cartEventListener() {
   // Buying Product
   productList.addEventListener('click', buyingProduct);
+  // Load Product Item
+  window.addEventListener('DOMContentLoaded', loadProductItem);
 }
 
 cartEventListener();
