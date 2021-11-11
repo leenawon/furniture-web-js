@@ -4,6 +4,19 @@ const totalCartPrice = document.querySelector('.total-cart-price');
 
 let CART_ITEM_ID = 1;
 
+function findCartInfo() {
+  let productItem = getProductItem();
+  let totalPrice = productItem.reduce((acc, product) => {
+    let price = parseInt(product.price.substr(1));
+    return acc += price;
+  }, 0);
+  
+  return {
+    totalPrice: totalPrice,
+    countProduct: productItem.length
+  }
+}
+
 // Get Product Item (local Storage)
 function getProductItem() {
   return localStorage.getItem('productItem') ? JSON.parse(localStorage.getItem('productItem')) : [];
