@@ -17,6 +17,13 @@ function findCartInfo() {
   }
 }
 
+// Update Cart Information
+function updateCartInfo() {
+  let cartInfo = findCartInfo();
+  countCart.textContent = cartInfo.countProduct;
+  totalCartPrice.textContent = `₩ ${cartInfo.totalPrice}`;
+}
+
 // Get Product Item (local Storage)
 function getProductItem() {
   return localStorage.getItem('productItem') ? JSON.parse(localStorage.getItem('productItem')) : [];
@@ -32,6 +39,7 @@ function loadProductItem() {
     CART_ITEM_ID++;
   }
   productItem.forEach((product) => addProductToCart(product));
+  updateCartInfo();
 }
 
 // Save Product Item (local Storage)
@@ -39,6 +47,7 @@ function saveProductItem(item) {
   let productItem = getProductItem();
   productItem.push(item);
   localStorage.setItem('productItem', JSON.stringify(productItem));
+  updateCartInfo();
 }
 
 // Add Product To Cart
