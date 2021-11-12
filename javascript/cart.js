@@ -4,6 +4,25 @@ const totalCartPrice = document.querySelector('.total-cart-price');
 
 let CART_ITEM_ID = 1;
 
+function deleteProduct(e) {
+  let cartItem;
+  if(e.target.tagName === 'BUTTON') {
+    cartItem = e.target.parentElement;
+    cartItem.remove();
+  } else if(e.target.tagName === 'I') {
+    cartItem = e.target.parentElement.parentElement;
+    cartItem.remove();
+  }
+
+  let productItem = getProductItem();
+  let updateProductItem = productItem.filter ((product) => {
+    return product.id !== parseInt(cartItem.id);
+  });
+
+  localStorage.setItem('productItem', JSON.stringify(updateProductItem));
+  updateCartInfo();
+}
+
 function findCartInfo() {
   let productItem = getProductItem();
   let totalPrice = productItem.reduce((acc, product) => {
@@ -100,6 +119,8 @@ function cartEventListener() {
   productList.addEventListener('click', buyingProduct);
   // Load Product Item
   window.addEventListener('DOMContentLoaded', loadProductItem);
+  // Delete Product Item
+  cartList.addEventListener('click', deleteProduct);
 }
 
 cartEventListener();
